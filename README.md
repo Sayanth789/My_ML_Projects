@@ -1,19 +1,20 @@
-# My ML Projects
+# My AI & Machine Learning Projects
 
-This repository contains Jupyter notebooks and exercises based on the book **Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow**.  
-Most projects involve data analysis using `pandas`, and machine learning models built with `Scikit-Learn` and `TensorFlow`.
+This repository contains a collection of AI, machine learning, and deep learning projects implemented in Python.
+It includes Jupyter notebooks, experiments, and exercises covering data analysis, model building, and visualization..
 
 ## Contents
 
-- Chapter-wise notebooks
-- Data preprocessing examples
-- Custom model training
-- Visualization with `matplotlib` and `seaborn`
-
-## Tools Used
+* Machine learning workflows and experimenrs
+* Deep Learning projects with neural networks
+* Data preprocessing and feature engineering eamples
+* Data visualization and evaluation
+* 
+## Tools & Libraries
 
 - Python
 - Jupyter Notebook
-- pandas
+- pandas, NumPy
 - Scikit-Learn
 - TensorFlow
+- matplotlib, seaborn
