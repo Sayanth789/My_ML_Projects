@@ -1,4 +1,4 @@
-## Greedy-Search
+## Greedy-Search 😠 😈
 ### What it does:
 Greedy decoding always picks the **single most probable next token** at every time step.
 
@@ -20,7 +20,7 @@ If the model predicts the token probabilities:
   * Wnen  **Determinism** is important
   * When model quality is already high
 
- ## Beam Search 
+ ## Beam Search 🕵️ 🕵️‍♂️
  ### Use case 
  Beam Search keeps **k (beam size)** number of candidates sequences at every step 
 
@@ -37,7 +37,7 @@ If the model predicts the token probabilities:
    * Better summarization
    * Reduces the chance of bad local choices
 
-     ## Use cases
+     ## Use cases 🗳️
      * Translation
      *  Summarization
      * Dialogue response when quality > speed
@@ -73,7 +73,7 @@ Samplig might choose:
  * Dialog generation
  * Any generative task needing variery
    
- ## Note :
+ ## Note 📓 📓
  Temperature is a **hyperparameter** used during **sampling-based decoding** that controls how random or confident a
  model is when generating the next token.
 It **reshapes the probability distribution** output by the model before sampling a token.
