@@ -39,3 +39,49 @@ R(90^\circ) =
 1 & 0
 \end{pmatrix}
 $$
+## Rotatin Matrix in 3D 
+Theea re **three seperate** rotation matrices :
+
+### Rotation around X-axis
+$$
+R_x(\theta) = 
+\begin{pmatrix}
+1 & 0 & 0 \\
+0 & \cos\theta & -\sin\theta \\
+0 & \sin\theta & \cos\theta
+\end{pmatrix}
+$$
+
+### Rotation around Y-axis
+$$
+R_y(\theta) = 
+\begin{pmatrix}
+\cos\theta & 0 & \sin\theta \\
+0 & 1 & 0 \\
+-\sin\theta & 0 & \cos\theta
+\end{pmatrix}
+$$
+
+### Rotation around Z-axis
+$$
+R_z(\theta) = 
+\begin{pmatrix}
+\cos\theta & -\sin\theta & 0 \\
+\sin\theta & \cos\theta & 0 \\
+0 & 0 & 1
+\end{pmatrix}
+$$
+
+
+
+# ⭐ Important properties of Rotation Matrices 
+Rotation matrices have special mathematical properties 
+### They preserve lengths ( no streching) 
+### They preserve angles 
+### They are orthogonal  
+   **$R^T R = I$**
+### Determinant = +1
+
+  
+
+
