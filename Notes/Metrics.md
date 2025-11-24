@@ -1,7 +1,6 @@
-#### While these are the metrics that measures different things, but we can list them under a 
-#### single unmbrella 🏖️ ☔ ☔
+### While these are the metrics that measures different things, but we can list them under a  single unmbrella 🏖️ ☔ ☔
 
-# BLEU : (Billigual Evaluation Understudy) 
+## BLEU : (Billigual Evaluation Understudy) 
 Purpose 
 * Measures how close a generated text is to one more referecne (grond-truth) texts 
 * Mostly used for **Machine learing** but also in summarization and text generation.
@@ -14,7 +13,7 @@ Purpose
  * BLEU = 0 -> completely different
  * BLUE = 1 -> identical to reference (rare)
 
- # ROGUE (Recall-Oriented Underdtudy for Gisting Evaluation) 
+ ## ROGUE (Recall-Oriented Underdtudy for Gisting Evaluation) 
  **Purpose** 
  * Measures the quality of **Summaries** or **generated text*  with a focus on **recall**
 
@@ -34,7 +33,7 @@ ROUGE-L: longest common subsequence
 * ROGUE = 0 -> no overlap
 * ROGUE = 1 -> perfect overlap
 
-#    Perplexity
+##    Perplexity
 ** Purpose** 
 * Measures how well a **language model ** predicts text
 * Used during the **training of language models** *(GPTs, LSTM, etc)
