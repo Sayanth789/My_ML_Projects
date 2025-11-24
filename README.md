@@ -12,9 +12,10 @@ It includes Jupyter notebooks, experiments, and exercises covering data analysis
 * Notes from papers. 📖 🖋️
 ## Tools & Libraries 🪛 🔩 🪓
 
-- Python
-- Jupyter Notebook
+- Python 🐍
+- Jupyter Notebook 📓
 - pandas, NumPy
 - Scikit-Learn
-- TensorFlow
-- matplotlib, seaborn
+- TensorFlow  
+- matplotlib, seaborn 🧮
+- PyTorch 🔦 🔦
