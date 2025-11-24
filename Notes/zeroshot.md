@@ -50,7 +50,7 @@ French:
 * Reduces mistakes
 * Improves accuracy for tasks the model is not explicitly trained for
 
-###Use Cases 🧠 🇼🇫
+### Use Cases 🧠 🇼🇫
 * New tasks with few labels
 * Custom classification
 * Style imitaiton ("write like this ")
