@@ -1,8 +1,8 @@
 # This note explains how the Architectural Evolutions happened as of now.....🌹 👻
-##FlashAttention (game changer) 
+## FlashAttention (game changer) 
 ### Drastically reduces memory and speeds up training ...
 
-####Used in ..
+#### Used in ..
 * GPT-4
 * LLaMA 2/3
 * Mistral
@@ -15,7 +15,7 @@ Allows:
 * Better extrapolatiion
 * Better training stabilty
 
-##Multi-Query Attention (MQA)/ Grouped Query Attention (GQA)
+## Multi-Query Attention (MQA)/ Grouped Query Attention (GQA)
 Reduces memory by sharing keys/values across heads
 used by:
 * PaLM
