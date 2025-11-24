@@ -25,4 +25,30 @@ Modern large language models (LLMs)
 * Generate text one token at a time
  The **decoder** has masked self-attention , which is prefered for next-token prediction.
 
+##Transformers are built entirely on "Attention"
+They replaced the RNNs/LSTM by using:
+* Self-attention
+* MultiHead attention
+* Layer Normalization
+* Feed-Forward blocks
+ This allowed:
+* Parallel processing
+* Long-range dependencies
+* Massive scaling
+
+#Tokenization matters
+
+Models understand text in "tokens", not in characters or words.
+
+Differnet tokenizers.
+* BPE
+* WordPie
+* SentencePie
+* TikToken (OpenAi optimized)
+
+## A good tokenizer improves:
+* vocabulary efficiency
+* Speed
+* Mepory   
+* Performance
 
