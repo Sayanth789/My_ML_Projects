@@ -19,15 +19,18 @@ It's a fundamental  concept in:
   
   ## Rotation Matrix in 2D (very common) 
    To rotate a vector by angle $\theta$:
-   R($\theta$) = 
-          $$ A = \begin{rmatrix}
-          cos$theta$ & -sin$theta$  \\
-          sin$theta$ & cos$theta$
-          \end{rmatrix}
-          $$
+         $$
+         R(\theta) =
+         \begin{pmatrix}
+         \cos\theta & -\sin\theta \\
+         \sin\theta & \cos\theta
+         \end{pmatrix}
+         $$
    Example : rotate a point (x, y) by 90$degree$:
-       R(90$degree$) = $$ B = \begin{r2matrix}
-          0 & -1 \\
-          1 & 0 
-          /end{r2matrix}
-          $$
+      $$
+      R(90^\circ) =
+      \begin{pmatrix}
+      0 & -1 \\
+      1 & 0
+      \end{pmatrix}
+      $$
