@@ -5,12 +5,12 @@ It includes Jupyter notebooks, experiments, and exercises covering data analysis
 
 ## Contents
 
-* Machine learning workflows and experimenrs
-* Deep Learning projects with neural networks
-* Data preprocessing and feature engineering eamples
-* Data visualization and evaluation
-* 
-## Tools & Libraries
+* Machine learning workflows and experimenrs 💻
+* Deep Learning projects with neural networks 🕸️
+* Data preprocessing and feature engineering eamples 
+* Data visualization and evaluation 🧮
+* Notes from papers. 📖 🖋️
+## Tools & Libraries 🪛 🔩 🪓
 
 - Python
 - Jupyter Notebook
