@@ -28,4 +28,39 @@
 
 * Distillation is very powerful: smaller models get reasoning ability without needing as much RL compute.  
 
+## What does the Pipeline contains 🛜
+**It contains 4 stages**
+### 1 Cold start 
+
+**In this work, they collect thousands of cold-start data to fine-tune the DeepSeek-V3-Base as the starting point for RL. Compared to DeepSeek-R1-Zero, the advantages of cold start data include**
+
+* Readability
+* Potential
+
+##    Reasoning-oriented Reinforcement Learning
+This phase focused on enhancing the model’s reasoning capabilities, particularly in reasoning-intensive tasks such as coding, mathematics, science, and logic reasoning, which involve well-defined problems with
+clear solutions. 
+
+## Rejection Sampling and Supervised Fine-Tuning
+When reasoning-oriented RL converges, thy utilized the resulting checkpoint to collect SFT (Supervised Fine-Tuning) data for the subsequent round. Unlike the initial cold-start data, which primarily focuses on reasoning, this stage incorporates data from other domains to enhance the model’s capabilities in writing, role-playing, and other general-purpose tasks. 
+
+## Reinforcement Learning for all Scenarios
+o further align the model with human preferences, they implemented a secondary reinforcement learning stage aimed at improving the model’s helpfulness and harmlessness while simultaneously refining its reasoning capabilities. Specifically, we train the model using a combination
+of reward signals and diverse prompt distributions. For reasoning data, they adhere to the methodology outlined in DeepSeek-R1-Zero, which utilizes rule-based rewards to guide the learning process in math, code, and logical reasoning domains. 
+
+
+** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** *** ** ** ** ** ** ** ** 
+
+
+
+
+
+
+
+
+
+
+
+
+
 
