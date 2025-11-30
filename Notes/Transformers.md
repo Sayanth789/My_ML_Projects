@@ -4,6 +4,10 @@ architecture.
  ##**The Encoder** -> Process the input 
  ##**The Decoder** -> Generates the output
 
+ ![alt text]( Transformer,_full_architecture(1).png)
+
+
+
  This is used for tasks like **machine translation** where the input and output are different sequences.
  Examples : 
  * Original Transformer
