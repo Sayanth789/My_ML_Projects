@@ -16,7 +16,8 @@ the model for each one.
 * However , It can be expensive and slow, especially as the number of hyperparameter grows, because the number
 * of comibnations increases exponentially.
 
-* **Random Search**: Randomly smaples combiantions feom a specified distribution or set of values for a fixed number of iterations.
+## **Random Search**🕵️
+* Randomly smaples combiantions feom a specified distribution or set of values for a fixed number of iterations.
 
 * **Use case** More efficient for large, high-dimnesional  seacrh spaces.
 
