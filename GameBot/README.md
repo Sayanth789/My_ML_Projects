@@ -17,7 +17,7 @@
 ## Playing Against the Agent
 You can play interactvey agaist the trained agent .
 
-### How ?? Just run this >>>> 🪄 🎩 🐀  python3 examples/play_example.py
+### How ?? Just run this >>>> 🪄 🎩 🐀  `python3 examples/play_example.py`
 
 ## Possible  Future improvement 
 - Add epsilon decy for better learning
