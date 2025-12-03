@@ -17,5 +17,5 @@ titled as we all know **attention is all you need**
   * CNN- baesd encoders
 
 
-  **An one more thing-- If you're an apple fan 😄** -  I made this as a seperate folder just because of it will
+  **And one more thing .....  (If you're an apple fan 😄) ** -  I made this as a seperate folder just because of it will, 
   help to make to add more materials and info. So with that .... that is all .. 👋 👋
