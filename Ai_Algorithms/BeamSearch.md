@@ -6,7 +6,57 @@ sequecnce  by exploring a limited number of the most promising options at each s
  than an exhaustive search for problems with a very large  state space, such as machine translation
  or speech recognition.
 
- ####How it works 
+
+function BEAMSEARCH(c, beam_width) returns best_paths
+  y0, h0 ← 0
+  path ← ()
+  complete_paths ← ∅
+
+
+ state ← (c, y0, h0, path)
+ frontier ← { state } // initial frontier
+
+ 
+ while frontier contains incomplete paths do
+   extended_frontier ← ∅
+     for each state ∈ frontier do
+       successor ← NEWSTATE(state, i, v_i)
+         extended_frontier ← ADDTOBEAM(
+                                     successor,
+                                     extended_frontier,
+                                     beam_width
+                                     )
+                                     
+
+     for each state ∈ extended_frontier do
+      if state_is_complete(state) then
+        complete_paths ← APPEND(complete_paths, state)
+        extended_frontier ← REMOVE(extended_frontier, state)
+
+
+    frontier ← extended_frontier
+
+
+  return complete_paths      
+
+function NEWSTATE(state, word, word_prob) 
+   return new_state 
+   
+     
+// BEAM maintanance ...................
+
+function ADDTOBEAM(state, frontier, width) 
+     if LENGTH(frontier) < width then 
+         frontier <- INSERT(state, frontier)
+
+     else if SCORE(state) > SCORE(WORSTOF(frontier)) then 
+         frontier <- REMOVE(frontier)
+         frontier <- INSERT(state, frontier) 
+
+     return frontier 
+         
+ 
+ ###  How it works 
 
  * At each step: The algorithm generates all possible next options from the current set of candidates.
  * Evaluates options: It evaluates these new options based on a heuristic function (eg: the probability of
