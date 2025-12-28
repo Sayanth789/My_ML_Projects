@@ -40,8 +40,7 @@ function BEAMSEARCH(c, beam_width) returns best_paths
   return complete_paths      
 
 function NEWSTATE(state, word, word_prob) 
-   return new_state 
-```   
+   return new_state    
      
 // BEAM maintanance ...................
 
@@ -54,6 +53,7 @@ function ADDTOBEAM(state, frontier, width)
        frontier <- INSERT(state, frontier) 
 
    return frontier 
+```
          
  
  ###  How it works 
