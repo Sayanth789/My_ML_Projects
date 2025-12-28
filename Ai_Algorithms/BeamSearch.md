@@ -18,23 +18,23 @@ function BEAMSEARCH(c, beam_width) returns best_paths
 
  
  while frontier contains incomplete paths do
-   extended_frontier ← ∅
-     for each state ∈ frontier do
-       successor ← NEWSTATE(state, i, v_i)
-         extended_frontier ← ADDTOBEAM(
-                                     successor,
-                                     extended_frontier,
-                                     beam_width
-                                     )
+  extended_frontier ← ∅
+    for each state ∈ frontier do
+      successor ← NEWSTATE(state, i, v_i)
+        extended_frontier ← ADDTOBEAM(
+                                       successor,
+                                       extended_frontier,
+                                       beam_width
+                                      )
                                      
 
-     for each state ∈ extended_frontier do
+   for each state ∈ extended_frontie r do
       if state_is_complete(state) then
         complete_paths ← APPEND(complete_paths, state)
         extended_frontier ← REMOVE(extended_frontier, state)
 
 
-    frontier ← extended_frontier
+   frontier ← extended_frontier
 
 
   return complete_paths      
@@ -46,14 +46,14 @@ function NEWSTATE(state, word, word_prob)
 // BEAM maintanance ...................
 
 function ADDTOBEAM(state, frontier, width) 
-     if LENGTH(frontier) < width then 
-         frontier <- INSERT(state, frontier)
+   if LENGTH(frontier) < width then 
+      frontier <- INSERT(state, frontier)
 
-     else if SCORE(state) > SCORE(WORSTOF(frontier)) then 
-         frontier <- REMOVE(frontier)
-         frontier <- INSERT(state, frontier) 
+   else if SCORE(state) > SCORE(WORSTOF(frontier)) then 
+       frontier <- REMOVE(frontier)
+       frontier <- INSERT(state, frontier) 
 
-     return frontier 
+   return frontier 
          
  
  ###  How it works 
