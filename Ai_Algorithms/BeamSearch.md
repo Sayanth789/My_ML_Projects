@@ -6,7 +6,7 @@ sequecnce  by exploring a limited number of the most promising options at each s
  than an exhaustive search for problems with a very large  state space, such as machine translation
  or speech recognition.
 
-
+```text
 function BEAMSEARCH(c, beam_width) returns best_paths
   y0, h0 ← 0
   path ← ()
@@ -41,7 +41,7 @@ function BEAMSEARCH(c, beam_width) returns best_paths
 
 function NEWSTATE(state, word, word_prob) 
    return new_state 
-   
+```   
      
 // BEAM maintanance ...................
 
