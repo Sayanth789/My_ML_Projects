@@ -56,5 +56,18 @@ All the instance weights are normalized (divided by $$ \sum_{i=1}^{m} w_i $$
 
 ## Gradient Boosting 
 * Gradient Boosting works by sequentially adding predictors to an ensemble, each one correcting its predecessor. However, instead of tweaking the instance weights at every iteration like AdaBoost, Gradient Boosting tries to fit the new predictor to the residual errors made by the previous predictor.
+
+  ## Stacking
+  Stacking is an ensemble learning technique that uses predictions from multiple models (for example decision tree, knn or svm) to build a new model. This model is used for making predictions on the test set.
+
+Stacking is an ensemble learning technique that uses predictions from multiple models (for example decision tree, knn or svm) to build a new model. This model is used for making predictions on the test set.
+
+![Stacking](Images/stacking.png)
+
+  First, the training set is split in two subsets. The first subset is used to train the predictors in the first layer. Next, the predictors in the first layer are used to make predictions on the second(hold-out) set. Now (in example above) for each instance in the hold-out set there are four predicted values. A new training set is created using these predicted values as input features and keeping the target values. The blender is trained on this new training set, it learns to predict the target value where inputs are the the first layer’s predictions.
+
+It is possible to train several different blenders on the top of one another (e.g., one using Linear Regression, another using Random Forest Regression etc). The training set should be divided equal to the number of layers
+
+
   
 
