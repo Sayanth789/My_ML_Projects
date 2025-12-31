@@ -20,7 +20,12 @@ types of erros, improving the ensemble's accuracy.
 * Train a few classifiers (Logistic regression classifier, SVM, Random Forest, K-Nearest neighbors etc.) on the training set.
 [Gradient Descent](Images/Voting_classifiers.png)
 
-* 
+* Aggregate the predictions of each classifier and predict the class that gets the most votes. This majority vote classifier is called a hard voting classifier.
 
+[Majority Votes](Images/Majority_vote.png)
+> This voting classifier often achieves a higher accuracy than the best classifier in the ensemble. Even if each classifier is a weak learner (it does only slightly better than random guessing), the ensemble can still be a strong learner (achieving high accuracy), provided there are a sufficient number of weak learners and they are sufficiently diverse.
+>
+> 
+   
     
  
