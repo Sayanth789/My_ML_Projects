@@ -48,7 +48,13 @@ $$
 All the instance weights are normalized (divided by $$ \sum_{i=1}^{m} w_i $$
 
 
+* A new predictor is trained using the updated weights, and the whole process is repeated (the new predictor’s weight is computed, the instance weights are updated, then another predictor is trained.
+* To make predictions, AdaBoost simply computes the predictions of all the predictors and weighs them using their predictor weights αj. The predicted class is the one that receives the majority of weighted votes.
+* Scikit-Learn uses a multiclass version of AdaBoost - SAMME. When there are just two classes, SAMME is equivalent to AdaBoost. If the predictors can estimate class probabilities (if they have a predict_proba() method), Scikit-Learn can use a variant of SAMME called SAMME.R, which relies on class probabilities rather than predictions and generally performs better.
 
+* If AdaBoost ensemble underfits the training data, you can try increasing the number of estimators or reducing the regularization hyperparameters of the base estimator. You may also try slightly increasing the learning rate.
 
+## Gradient Boosting 
+* Gradient Boosting works by sequentially adding predictors to an ensemble, each one correcting its predecessor. However, instead of tweaking the instance weights at every iteration like AdaBoost, Gradient Boosting tries to fit the new predictor to the residual errors made by the previous predictor.
   
 
