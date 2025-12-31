@@ -18,7 +18,7 @@ types of erros, improving the ensemble's accuracy.
     can be reduced dramtically by averaging.
 ## Voting Classifiers 
 * Train a few classifiers (Logistic regression classifier, SVM, Random Forest, K-Nearest neighbors etc.) on the training set.
-![Alt text](Ensemble-Learning/Images/Voting_classifiers.png)
+[Gradient Descent](Images/Voting_classifiers.png)
 
 * 
 
